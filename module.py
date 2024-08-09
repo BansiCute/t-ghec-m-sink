@@ -29,10 +29,10 @@ def click(img):
     bottom_right = (top_left[0] + img2.shape[1], top_left[1] + img2.shape[0])
     center_x = top_left[0] + img2.shape[1] // 2
     center_y = top_left[1] + img2.shape[0] // 2
-    cv2.rectangle(img1, top_left, bottom_right, (0, 255, 0), 2)
-    cv2.imshow('Detected', img1)
-    cv2.waitKey(2000)
-    cv2.destroyAllWindows()
+    # cv2.rectangle(img1, top_left, bottom_right, (0, 255, 0), 2)
+    # cv2.imshow('Detected', img1)
+    # cv2.waitKey(2000)
+    # cv2.destroyAllWindows()
     # #in
     # print(f"Vị trí phát hiện: ({center_x}, {center_y})")
 
@@ -111,64 +111,82 @@ def scroll(x1, y1, x2, y2, duration=500):
 
 
 
-
-click("resume.png")
-time.sleep(3)
-scroll(200, 500, 1000, 500)
-scroll(250, 800, 250, 400)
-click("enconter.png")
-encounter_main()
-time.sleep(1)
-
-
-
-click("resume.png")
-time.sleep(3)
-scroll(1000, 500, 200, 500)
-scroll(250, 800, 250, 400)
-click("enconter.png")
-encounter_main()
-time.sleep(1)
+while True:
+    click("resume.png")
+    time.sleep(3)
+    scroll(200, 500, 1000, 500)
+    scroll(250, 800, 250, 400)
+    click("enconter.png")
+    encounter_main()
+    time.sleep(1)
 
 
 
-click("resume.png")
-time.sleep(3)
-click("next_day.png")
-time.sleep(10)
-
-click("day.png")
-click("skip.png")
-click("confirm2.png")
-click("next_day.png")
-time.sleep(8)
-
-click("base.png")
-click("upgrade.png")
-click("upgrade2.png")
-time.sleep(2)
-click("back.png")
-click("back.png")
-click("back.png")
-time.sleep(1)
-
-
-click("day.png")
-click("skip.png")
-click("confirm2.png")
-time.sleep(1)
-click("next_day.png")
-time.sleep(8)
-
-click("survived.png")
-time.sleep(5)
-click("start_today.png")
-time.sleep(2)
+    click("resume.png")
+    time.sleep(3)
+    scroll(1000, 500, 200, 500)
+    scroll(250, 800, 250, 400)
+    click("enconter.png")
+    encounter_main()
+    time.sleep(1)
 
 
 
+    click("resume.png")
+    time.sleep(3)
+    click("next_day.png")
+    time.sleep(10)
+
+    click("day.png")
+    click("skip.png")
+    click("confirm2.png")
+    click("next_day.png")
+    time.sleep(8)
+
+    click("base.png")
+    click("upgrade.png")
+    click("upgrade2.png")
+    time.sleep(2)
+    click("back.png")
+    click("back.png")
+    click("back.png")
+    time.sleep(1)
 
 
+    click("day.png")
+    click("skip.png")
+    click("confirm2.png")
+    time.sleep(1)
+    click("next_day.png")
+    time.sleep(8)
+
+    click("survived.png")
+    time.sleep(5)
+    click("start_today.png")
+    time.sleep(2)
+
+
+    click("bacham.png")
+    time.sleep(5)
+    click("loadsave.png")
+    time.sleep(5)
+    click("confirm2.png")
+    time.sleep(5)
+    click("confirm3.png")
+    time.sleep(5)
+    click("day2.png")
+    time.sleep(5)
+    click("load_day_confirm.png")
+    time.sleep(10)
+    click("start_today.png")
+    time.sleep(10)
+    click("cc.png")
+    time.sleep(10)
+    click("cc.png")
+    time.sleep(10)
+    click("cc.png")
+    time.sleep(5)
+    click("back.png")
 
 
 
